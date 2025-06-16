@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media print {
+  body { 
+    margin: 0; 
+    background: white !important;
+  }
+  .page-break { 
+    page-break-before: always; 
+  }
+  .no-print { 
+    display: none !important; 
+  }
+  .print-container {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 20px !important;
+  }
+  .workout-section {
+    page-break-before: always;
+  }
+  .goals-section-print {
+    page-break-before: always;
+  }
+  .progress-section-print {
+    page-break-before: always;
+  }
+  .notes-section-print {
+    page-break-before: always;
+  }
+}
+
+.load-input {
+  border: none;
+  border-bottom: 2px solid #007bff;
+  background: transparent;
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 14px;
+  outline: none;
+}
+
+.load-input:focus {
+  border-bottom-color: #0056b3;
+}
+
+.exercise-table tr:hover {
+  background: #f8f9fa;
+}
+
+.goals-table tr:hover {
+  background: rgba(184, 212, 240, 0.3);
+}
+
+.progress-table tr:hover {
+  background: rgba(255, 234, 167, 0.3);
+}
+
+.deload {
+  background: #ffeaa7 !important;
+  font-weight: bold;
+}
+
+.notes-area {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.print-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+kbd {
+  background: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  color: #333;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 1.4;
+  margin: 0 1px;
+  padding: 2px 4px;
+  white-space: nowrap;
+  font-family: monospace;
+}
