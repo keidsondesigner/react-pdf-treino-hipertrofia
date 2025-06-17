@@ -1,5 +1,5 @@
 import React from 'react';
-import { Printer, Download } from 'lucide-react';
+import { Printer } from 'lucide-react';
 import Header from './Header';
 import PDFInstructions from './PDFInstructions';
 import WorkoutDay from './WorkoutDay';
@@ -17,10 +17,11 @@ const WorkoutPlan: React.FC = () => {
       title: 'LEGS A (Domingo) - Foco Quadríceps e Posterior',
       emoji: '🦵',
       exercises: [
-        { name: 'Agachamento livre', series: '4', reps: '8–10' },
-        { name: 'Leg Press', series: '4', reps: '10–12' },
+        { name: 'Cadeira extensora unilateral', series: '3', reps: '12–15' },
         { name: 'Cadeira extensora', series: '3', reps: '12–15' },
-        { name: 'Stiff (barra ou halter)', series: '4', reps: '8–10' },
+        { name: 'Leg Press', series: '4', reps: '10–12' },
+        { name: 'Agachamento frontal', series: '4', reps: '8–10' },
+        { name: 'Passada com (barra ou halter)', series: '4', reps: '8–10' },
         { name: 'Flexora deitada', series: '3', reps: '12–15' },
         { name: 'Panturrilha em pé', series: '4', reps: '15–20' }
       ]
@@ -29,11 +30,12 @@ const WorkoutPlan: React.FC = () => {
       title: 'PUSH A (Segunda) - Peito, Ombros e Tríceps',
       emoji: '💪',
       exercises: [
+        { name: 'Voador', series: '4', reps: '8–10' },
         { name: 'Supino reto (barra)', series: '4', reps: '8–10' },
         { name: 'Supino inclinado (halteres)', series: '4', reps: '10–12' },
         { name: 'Desenvolvimento ombro', series: '4', reps: '10–12' },
         { name: 'Elevação lateral', series: '3', reps: '12–15' },
-        { name: 'Tríceps testa', series: '3', reps: '10–12' },
+        { name: 'Tríceps Testa', series: '3', reps: '10–12' },
         { name: 'Tríceps pulley', series: '3', reps: '12–15' }
       ]
     },
@@ -41,45 +43,54 @@ const WorkoutPlan: React.FC = () => {
       title: 'PULL A (Terça) - Costas e Bíceps',
       emoji: '🔙',
       exercises: [
-        { name: 'Barra fixa assistida', series: '4', reps: '6–8' },
-        { name: 'Remada baixa', series: '4', reps: '10–12' },
-        { name: 'Puxada alta (pulley)', series: '4', reps: '10–12' },
+        { name: 'Puxada alta aberta(pulley)', series: '4', reps: '6–8' },
+        { name: 'Puxada alta fechada(pulley)', series: '4', reps: '6–8' },
+        { name: 'Remada baixa aberta', series: '4', reps: '10–12' },
+        { name: 'Remada baixa fechada', series: '4', reps: '10–12' },
+        { name: 'Posteior de ombros', series: '3', reps: '12–15' },
+        { name: 'Encolhimento ombros', series: '3', reps: '12–15' },
         { name: 'Rosca direta (barra)', series: '3', reps: '10–12' },
-        { name: 'Rosca martelo', series: '3', reps: '12–15' },
-        { name: 'Encolhimento ombros', series: '3', reps: '12–15' }
+        { name: 'Rosca scott', series: '3', reps: '10–12' },
       ]
     },
     {
       title: 'LEGS B (Quinta) - Foco Glúteos e Variações',
       emoji: '🦵',
       exercises: [
+        { name: 'Cadeira extensora unilateral', series: '3', reps: '12–15' },
+        { name: 'Cadeira extensora', series: '3', reps: '12–15' },
+        { name: 'Leg Press', series: '4', reps: '10–12' },
         { name: 'Agachamento frontal', series: '4', reps: '8–10' },
-        { name: 'Passada com halteres', series: '3', reps: '10–12' },
-        { name: 'Cadeira extensora', series: '3', reps: '15' },
-        { name: 'Flexora sentada', series: '3', reps: '15' },
-        { name: 'Panturrilha sentada', series: '4', reps: '20' }
+        { name: 'Passada com (barra ou halter)', series: '4', reps: '8–10' },
+        { name: 'Flexora deitada', series: '3', reps: '12–15' },
+        { name: 'Panturrilha em pé', series: '4', reps: '15–20' }
       ]
     },
     {
       title: 'PUSH B (Sexta) - Variações Push',
       emoji: '💪',
       exercises: [
-        { name: 'Supino inclinado (barra)', series: '4', reps: '8–10' },
-        { name: 'Crucifixo reto (halteres)', series: '3', reps: '12–15' },
-        { name: 'Elevação frontal', series: '3', reps: '10–12' },
-        { name: 'Tríceps banco', series: '3', reps: '12–15' },
-        { name: 'Tríceps corda', series: '3', reps: '15' }
+        { name: 'Voador', series: '4', reps: '8–10' },
+        { name: 'Supino reto (barra)', series: '4', reps: '8–10' },
+        { name: 'Supino inclinado (halteres)', series: '4', reps: '10–12' },
+        { name: 'Elevação frontal (ombro)', series: '3', reps: '10–12' },
+        { name: 'Puxada baixa Barra (ombro)', series: '3', reps: '10–12' },
+        { name: 'Tríceps testa', series: '3', reps: '10–12' },
+        { name: 'Tríceps pulley', series: '3', reps: '12–15' }
       ]
     },
     {
       title: 'PULL B (Sábado) - Variações Pull',
       emoji: '🔙',
       exercises: [
-        { name: 'Remada unilateral', series: '4', reps: '10–12' },
-        { name: 'Puxada supinada (pulley)', series: '4', reps: '10–12' },
-        { name: 'Rosca concentrada', series: '3', reps: '12–15' },
-        { name: 'Rosca scott máquina', series: '3', reps: '12–15' },
-        { name: 'Facepull', series: '3', reps: '12–15' }
+        { name: 'Puxada alta aberta(pulley)', series: '4', reps: '6–8' },
+        { name: 'Puxada alta fechada(pulley)', series: '4', reps: '6–8' },
+        { name: 'Remada baixa aberta', series: '4', reps: '10–12' },
+        { name: 'Remada baixa fechada', series: '4', reps: '10–12' },
+        { name: 'Posteior de ombros', series: '3', reps: '12–15' },
+        { name: 'Encolhimento ombros', series: '3', reps: '12–15' },
+        { name: 'Alternada banco (halters)', series: '3', reps: '10–12' },
+        { name: 'Rosca martelo', series: '3', reps: '12–15' },
       ]
     }
   ];
